@@ -33,3 +33,24 @@ You must use jQuery's css() method!
 var articleItems;
 
 articleItems = $('.article-item').css('font-size', '20px')// your code goes here!
+/*---------------------------------------------------------------------------------------------------*/
+
+/*------------------------- Collecting Values Quiz --------------------------------------------------*/
+
+/*
+For this quiz, use jQuery's val method to make live changes to the 'Cool Articles' <h1>!
+
+The starter code below creates an event listener that will run any time the input changes.
+For more on events, check the instructor notes.
+*/
+
+
+$('#input').on('change', function() {
+    var val;
+    val = $('#input').val();                      // Your code goes here!
+    $('.articles').children('h1').text( val );
+});
+
+/*---------------------------------------------------------------------------------------------------*/
+
+/*------------------------- Collecting Values Quiz --------------------------------------------------*/
