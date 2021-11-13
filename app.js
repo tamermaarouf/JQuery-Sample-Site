@@ -15,11 +15,10 @@ For this quiz, set the href of the <a> in the first nav item to "#1".
 You must use jQuery's attr() method!
 */
 
-
-var navList;
-
-navList = $('.nav-list').children().find('a').first().attr("href", "#1");               // your code goes here!
-
+$(function() {
+	var navList;
+	navList = $('.nav-list').children().find('a').first().attr("href", "#1");   
+})
 
 /*******************************************************************************/
 
@@ -83,7 +82,7 @@ calculate the length of each one, and add each length to the end of each <p>.
 
 Also, make sure you don't change the text inside each <p> except to add the length, otherwise your
 length numbers won't be correct!
-*/
+
 
 // Your code goes here!
 
@@ -91,3 +90,30 @@ $( "p" ).each(function(element) {
     $( this ).text($( this ).text() + $( this ).text().length);
 });
 
+*/
+
+
+/*---------------------------------------------------------------------------------------------------*/
+
+/*------------------------- Iterating with Each Quiz --------------------------------------------------*/
+
+
+/*
+
+For this quiz, can you use this script, which is linked in the <head> of index.html,
+to change the boring placeholder image to a picture of a cute animal?
+
+Remember, you'll need to pass a function into the jQuery object to run
+when the document is ready.
+
+Unfortunately, placepuppy is no longer available. Here's a link to a random
+animal image on lorempixel.com:
+http://lorempixel.com/350/150/animals/
+
+Good luck!
+
+*/
+
+$(function() {
+    $('img').attr('src', 'http://lorempixel.com/350/150/animals/');
+});
